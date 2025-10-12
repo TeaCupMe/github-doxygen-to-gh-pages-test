@@ -6,6 +6,7 @@ on:
       - ".github/workflows/generate-and-publish-docs.yml"
       - "examples/**"
       - "src/**"
+      - "doxygen.conf"
     branches: 
       - main
       - examples
@@ -15,6 +16,7 @@ on:
       - ".github/workflows/generate-and-publish-docs.yml"
       - "examples/**"
       - "src/**"
+      - "doxygen.conf"
     branches: 
       - main
   schedule:
