@@ -1,4 +1,4 @@
-name: Compile Examples
+name: Compile and publish documentation to GitHub pages
 
 on:
   push:
