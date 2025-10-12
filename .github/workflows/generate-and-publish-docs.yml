@@ -17,7 +17,6 @@ on:
       - "src/**"
     branches: 
       - main
-      - staging
   schedule:
     # Run every Tuesday at 8 AM UTC to catch breakage caused by changes to external resources (stm32duino).
     - cron: "0 8 * * TUE"
@@ -27,6 +26,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
