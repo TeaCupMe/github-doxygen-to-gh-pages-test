@@ -48,7 +48,7 @@ $.get('/' + patharr[1] + urlroot + '/index.html', (data) =>
       .each(function() {
             var el = $(this);
             var request = new XMLHttpRequest();
-            request.open('HEAD', el.attr('href'), true);
+            request.open('HEAD', "index.html", true);
             request.onreadystatechange = function(){
                if (request.readyState === 4){
                   if (request.status === 404) {
