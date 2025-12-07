@@ -31,6 +31,7 @@ jobs:
           working-directory: '.'
           doxyfile-path: './doxygen.conf'
 
+
       # - run: |
       #     cp ./doc/${{ github.ref_name }}/html/* -R ./doc/${{ github.ref_name }}/
 
@@ -39,7 +40,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: 'IntroSatLib-docs-${{github.ref_name}}'
-          path: './doxygen/'
+          path: './pages/doc/${{ github.ref_name }}'
+          
 
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@v4.0.0
