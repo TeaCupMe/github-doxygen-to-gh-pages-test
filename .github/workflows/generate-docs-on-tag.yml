@@ -34,15 +34,14 @@ jobs:
           name: 'IntroSatLib-docs-${{github.ref_name}}'
           path: './doxygen/'
 
+      - name: Generate Directory Listings
+        uses: jayanta525/github-pages-directory-listing@v4.0.0
+        with:
+          FOLDER: doc # Directory to generate index for
+      
       - name: Deploy Doxygen files to GH Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./doc
           destination_dir: ./doc
-
-      - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@v4.0.0
-        with:
-          FOLDER: doc # Directory to generate index for
-      
