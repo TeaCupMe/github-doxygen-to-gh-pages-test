@@ -1782,6 +1782,7 @@ dl.invariant dt, dl.pre dt, dl.post dt {
 #projectrow
 {
 	height: 56px;
+	z-index: -100;
 }
 
 #projectlogo
