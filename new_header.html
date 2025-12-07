@@ -56,14 +56,6 @@ $extrastylesheet
   <td id="projectalign">
    <div id="projectname">$projectname<!--BEGIN PROJECT_NUMBER--><span id="projectnumber">&#160;$projectnumber</span><!--END PROJECT_NUMBER-->
    </div>
-   <!-- BEGIN version select -->
-    <div class="dropdown">
-      <button class="dropbtn">Version $projectnumber</button>
-      <div class="dropdown-content">
-      </div>
-    </div>
-    <script type="text/javascript" src="./selectversion.js"></script>
-    <!-- END version select -->
    <!--BEGIN PROJECT_BRIEF--><div id="projectbrief">$projectbrief</div><!--END PROJECT_BRIEF-->
   </td>
   <!--END PROJECT_NAME-->
@@ -71,6 +63,16 @@ $extrastylesheet
    <!--BEGIN PROJECT_BRIEF-->
     <td>
     <div id="projectbrief">$projectbrief</div>
+    </td>
+    <td>
+      <!-- BEGIN version select -->
+    <div class="dropdown">
+      <button class="dropbtn">Version $projectnumber</button>
+      <div class="dropdown-content">
+      </div>
+    </div>
+    <script type="text/javascript" src="./selectversion.js"></script>
+    <!-- END version select -->
     </td>
    <!--END PROJECT_BRIEF-->
   <!--END !PROJECT_NAME-->
