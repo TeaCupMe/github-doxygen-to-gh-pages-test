@@ -31,12 +31,12 @@ function url2version(patharr) {
    return patharr[patharr.length - urlrootdirs - 1];
 }
 
-let patharr = window.location.pathname.replace(/\/+/g, '/').split('/');
+let patharr = window.location.pathname.replace(/\/+/g, '/').split('/').splice(1);
 let thisvers = url2version(patharr);
 $('.dropbtn').html("Version " + url2label(thisvers));
 
 // https://stackoverflow.com/questions/30622369
-$.get('/' + patharr[1] + urlroot + '/index.html', (data) =>
+$.get('/' + patharr[0] + urlroot + '/index.html', (data) =>
       {
       let ret = parseDirectoryListing(data);
       $('.dropdown-content').append(ret.join(''));
@@ -85,7 +85,7 @@ function parseDirectoryListing(text)
    }
    docs = docs.map((x) => '<a class="verslink" href="'
                    + patharr.slice(0, urlrootdirs).join('/')
-                   + '/' + x + '/' + patharr[patharr.length-1] + '">'
+                   + '/' + x + '/html/' + patharr[patharr.length-1] + '">'
                    + url2label(x)
                    + '</a>');
    return docs;
