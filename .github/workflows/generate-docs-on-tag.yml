@@ -19,7 +19,7 @@ jobs:
           path: ./pages
 
       - run: |
-          rm ./doc/index.html
+          rm ./pages/doc/index.html
 
       - run: |
           echo "OUTPUT_DIRECTORY=./pages/doc/${{ github.ref_name }}" >> ./doxygen.conf
