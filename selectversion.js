@@ -12,7 +12,8 @@ let urlroot = '/doc';
 // Convert a url directory (e.g. "v620") to a version number displayed on the
 // web page (e.g. "6.20").
 function url2label(versdir) {
-   return versdir.replace(/^v(\d)/, 'v$1.');
+   return versdir;
+   // return versdir.replace(/^v(\d)/, 'v$1.');
 }
 
 ///=============================================================================
@@ -35,7 +36,7 @@ let thisvers = url2version(patharr);
 $('.dropbtn').html("Version " + url2label(thisvers));
 
 // https://stackoverflow.com/questions/30622369
-$.get(urlroot + '/', (data) =>
+$.get(urlroot + '/index.html', (data) =>
       {
       let ret = parseDirectoryListing(data);
       $('.dropdown-content').append(ret.join(''));
