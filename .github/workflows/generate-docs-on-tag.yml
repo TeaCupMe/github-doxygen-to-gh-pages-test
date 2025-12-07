@@ -16,6 +16,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: "gh-pages"
+      
+      - run: |
+          rm ./doc/index.html
 
       - run: |
           echo "OUTPUT_DIRECTORY=./doc/${{ github.ref_name }}" >> ./doxygen.conf
