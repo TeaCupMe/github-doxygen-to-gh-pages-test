@@ -18,7 +18,12 @@ jobs:
           ref: "gh-pages"
           path: ./pages
 
-      - run: |
+      - name: Create doc/ directory if not exists
+        run: |
+          mkdir -p ./pages/doc
+
+      - name: Remove outdated directory listing from root
+        run: |
           rm -f ./pages/doc/index.html
 
       - run: |
