@@ -85,7 +85,7 @@ function parseDirectoryListing(text)
    }
    docs = docs.map((x) => '<a class="verslink" href="/'
                    + patharr.slice(0, urlrootdirs).join('/')
-                   + '/' + x + '/html/' + patharr[patharr.length-1] + '">'
+                   + '/' + x + '/' + patharr[patharr.length-1] + '">'
                    + url2label(x)
                    + '</a>');
    return docs;

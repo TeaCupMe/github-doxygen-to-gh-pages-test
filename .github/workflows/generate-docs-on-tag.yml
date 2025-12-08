@@ -31,11 +31,6 @@ jobs:
           working-directory: '.'
           doxyfile-path: './doxygen.conf'
 
-
-      # - run: |
-      #     cp ./doc/${{ github.ref_name }}/html/* -R ./doc/${{ github.ref_name }}/
-
-
       - name: Upload generated docs as artifact
         uses: actions/upload-artifact@v4
         with:
