@@ -4,6 +4,7 @@
   margin-left: 30px;
   margin-right: 10px;
   /* border: 1px solid var(--separator-color); */
+  border: 0px;
   color: white;
   background-color: var(--primary-color);
   padding: 6px 16px 6px 16px;
@@ -36,13 +37,15 @@
   display: none;
   position: absolute;
   margin-left: 30px;
-  background-color: #f1f1f1;
+  background-color: var(--primary-light-color);
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+
+  
   border-bottom-left-radius: var(--border-radius-small);
   border-bottom-right-radius: var(--border-radius-small);
-  border: 1px solid var(--separator-color);
+  
 }
 
 .dropdown:hover .dropbtn {
@@ -58,13 +61,20 @@
 }
 
 a.verslink {
+  /* border: 2px solid transparent; */
   border-radius: var(--border-radius-small);
+  color: white
+}
+
+a.verslink:hover {
+  color: var(--primary-dark-color);
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a.verslink:hover {
+.dropdown-content a:hover {
   background-color: var(--primary-light-color);
-  color: var(--primary-darker-color)
+  /* border: 2px solid var(--primary-dark-color); */
+  color: var(--primary-dark-color);
 }
 
 /* Show the dropdown menu on hover */
