@@ -1,9 +1,14 @@
 /**
  * @class MyClass
- * @brief A simple example class.
+ * \~english @brief A simple example class.
  *
- * This class demonstrates basic object-oriented principles with a member variable
- * and a member function.
+ * \~english This class demonstrates basic object-oriented principles with a member variable
+ * \~english and a member function.
+ * 
+ * \~russian @brief Демонстрационный класс.
+ * 
+ * \~russian Этот класс демонстрирует основные принципы объектно-ориентированного программирования
+ * \~russian через поле и методы доступа. 
  */
 class MyClass {
 public:
@@ -21,8 +26,8 @@ public:
                              \~russian Третий элемент */
 		fourth = 1, 	/**< \~english Fourth element 
                              \~russian Четвёртый элемент */
-        elevenG = 4 	/**< \~english Scale &plusmn;  16g
-                             \~russian Диапазон &plusmn;  16g */
+        elevenG = 4 	/**< \~english %Scale &plusmn; 11g
+                             \~russian Диапазон &plusmn; 11g */
 	};
 
     /**
