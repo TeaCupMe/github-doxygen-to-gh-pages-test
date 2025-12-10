@@ -28,7 +28,7 @@ function url2version(patharr) {
    // E.g. for `https://example.com/doc/master/classX.html`, the directory array
    // becomes `["doc", "master, "classX.html"]. This function might return
    // the second element, `master`.
-   return patharr[patharr.length - urlrootdirs - 1];
+   return patharr[patharr.length - urlrootdirs];
 }
 
 let patharr = window.location.pathname.replace(/\/+/g, '/').split('/').splice(1);
