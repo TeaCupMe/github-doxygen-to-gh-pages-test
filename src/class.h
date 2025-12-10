@@ -16,8 +16,8 @@ public:
 	{
 		first = 5,  	/**< \~english Первый элемент 
                              \~russian First element */
-        second = 0,  	/**< \~english Second element 
-                             \~russian Второй элемент */
+        second = 0,  	/**< \~russian Second element 
+                             \~english Второй элемент */
 		third = 3,		/**< Диапазон &plusmn;  8g */
 		fourth = 1, 	/**< Диапазон &plusmn;  16g */
         elevenG = 4 	/**<  &plusmn;  16g */
