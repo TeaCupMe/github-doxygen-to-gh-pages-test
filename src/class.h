@@ -7,6 +7,22 @@
  */
 class MyClass {
 public:
+	/**
+     * \~english @brief Enumerator example
+     * 
+     * \~russian @brief Пример перечисления
+	 */
+	enum Scale
+	{
+		first = 0,  	/*\~english *< First element 
+                          \~russian *< Диапазон &plusmn;  2g */
+        second = 0,  	/**< \~english Second element 
+                             \~russian Второй элемент */
+		third = 3,		/**< Диапазон &plusmn;  8g */
+		fourth = 1 	    /**< Диапазон &plusmn;  16g */
+        elevenG = 1 	/**<  &plusmn;  16g */
+	};
+
     /**
      * @brief Constructs a MyClass object with an initial value.
      * @param initialValue The value to initialize the member variable with.
