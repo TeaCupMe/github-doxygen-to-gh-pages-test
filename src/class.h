@@ -19,8 +19,8 @@ public:
         second = 0,  	/**< \~english Second element 
                              \~russian Второй элемент */
 		third = 3,		/**< Диапазон &plusmn;  8g */
-		fourth = 1 	    /**< Диапазон &plusmn;  16g */
-        elevenG = 1 	/**<  &plusmn;  16g */
+		fourth = 1, 	/**< Диапазон &plusmn;  16g */
+        elevenG = 4 	/**<  &plusmn;  16g */
 	};
 
     /**
