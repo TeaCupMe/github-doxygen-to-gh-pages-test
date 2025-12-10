@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['getvalue_0',['getValue',['../classMyClass.html#a6cf0b55172b464f067fe206a662edf43',1,'MyClass']]],
-  ['gh_20pages_20test_1',['github-doxygen-to-gh-pages-test',['../index.html',1,'']]],
-  ['github_20doxygen_20to_20gh_20pages_20test_2',['github-doxygen-to-gh-pages-test',['../index.html',1,'']]]
+  ['fourth_0',['fourth',['../classMyClass.html#ace0d2bdec7add3ae741994aa076fcf07a2ede842b4eae12685e0072ae1b261d38',1,'MyClass']]]
 ];

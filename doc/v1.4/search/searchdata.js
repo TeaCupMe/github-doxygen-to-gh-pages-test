@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "dfgmpst",
+  0: "defgmpst",
   1: "m",
   2: "gms",
   3: "s",
-  4: "fst",
+  4: "efst",
   5: "dgpt"
 };
 
