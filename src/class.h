@@ -14,8 +14,8 @@ public:
 	 */
 	enum Scale
 	{
-		first = 0,  	/*\~english *< First element 
-                          \~russian *< Диапазон &plusmn;  2g */
+		first = 5,  	/**< \~english Первый элемент 
+                             \~russian First element */
         second = 0,  	/**< \~english Second element 
                              \~russian Второй элемент */
 		third = 3,		/**< Диапазон &plusmn;  8g */
