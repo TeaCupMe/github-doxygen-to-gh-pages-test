@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" viewBox="99 99 152 152">
   <rect y="104" width="142" height="142" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 2px;" rx="8.953" ry="8.953" x="104"/>
   <rect y="121" width="108" height="108" style="stroke: rgb(0, 0, 0); stroke-width: 2px; fill: rgb(255, 255, 255);" x="121"/>
   <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-width: 2px; transform-box: fill-box; transform-origin: 50% 50%;" d="M 104 100 H 121 L 125 104 V 121 L 121 125 H 104 L 100 121 V 104 L 104 100 Z" bx:shape="rect 100 100 25 25 1 4 4 2@920d8214"/>
