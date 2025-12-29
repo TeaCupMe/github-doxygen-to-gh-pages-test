@@ -27,8 +27,8 @@ jobs:
           rm -f ./pages/doc/index.html
 
       - run: |
-          echo "OUTPUT_DIRECTORY=./pages/doc/${{ github.ref_name }}" >> ./doxygen.conf
-          echo "PROJECT_NUMBER=${{ github.ref_name }}" >> ./doxygen.conf  
+          echo "OUTPUT_DIRECTORY=./pages/doc/${{ github.ref_name }}" >> ./doxygen/doxygen.conf
+          echo "PROJECT_NUMBER=${{ github.ref_name }}" >> ./doxygen/doxygen.conf  
 
       - name: Generate Doxygen files
         uses: mattnotmitt/doxygen-action@edge
